@@ -1,1 +1,1 @@
-# few_shot_news_classification
+# Few-Shot-News-Classification
