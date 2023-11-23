@@ -16,7 +16,7 @@ The model can be found [here](https://drive.google.com/file/d/107vHAbHNqG05WlDmN
 
 [Code for fine-tuning](https://github.com/KaishuoWang/Depression-Detection/blob/main/depression-detection-classification.ipynb)
 
-F1: 0.7686
+Weighted F1 score: 0.7686, Macro F1 score: 0.7278
 
 ## Masked Language Modeling approach
 
@@ -24,7 +24,7 @@ The model can be found [here](kwang123/MaskedLM-roberta-large).
 
 [Code for fine-tuning](https://github.com/KaishuoWang/Depression-Detection/blob/main/masked_language_modeling.ipynb)
 
-F1: 0.6160
+Weighted F1 score: 0.6160, Macro F1 score: 0.3786
 
 ## Voting System
 
@@ -34,4 +34,4 @@ Weight for Classification model: $0.7686 \div (0.6160 + 0.7686) = 0.5551$
 
 [Code for voting system](https://github.com/KaishuoWang/Depression-Detection/blob/main/voting_system.ipynb)
 
-F1: 0.8487601324211029
+Weighted F1 score: 0.8488, Macro F1 score: 0.8044
