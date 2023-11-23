@@ -28,9 +28,9 @@ Weighted F1 score: 0.6160, Macro F1 score: 0.3786
 
 ## Voting System
 
-Weight for MaskedLM model: $0.6160 \div (0.6160 + 0.7686) = 0.4449$
+Weight for MaskedLM model: $0.3786 \div (0.7278 + 0.3786)$
 
-Weight for Classification model: $0.7686 \div (0.6160 + 0.7686) = 0.5551$
+Weight for Classification model: $0.7278 \div (0.7278 + 0.3786)$
 
 [Code for voting system](https://github.com/KaishuoWang/Depression-Detection/blob/main/voting_system.ipynb)
 
