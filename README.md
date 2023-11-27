@@ -10,6 +10,8 @@ Fine-tuning BERT-base-uncased on argilla/twitter-coronavirus to generate emotion
 
 [Code to generate emotion features](https://github.com/KaishuoWang/Depression-Detection/blob/main/generating-emotion-scores.ipynb)
 
+Weighted F1 score: 0.8926, Macro F1 score: 0.8967
+
 ## Traditional classification approach
 
 The model can be found [here](https://drive.google.com/file/d/107vHAbHNqG05WlDmNSzV7m9vET72AVe_/view?usp=sharing).
