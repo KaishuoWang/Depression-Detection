@@ -18,7 +18,7 @@ The model can be found [here](https://drive.google.com/file/d/107vHAbHNqG05WlDmN
 
 Weighted F1 score: 0.7686, Macro F1 score: 0.7278
 
-## Masked Language Modeling approach
+## Prompt-based classification approach
 
 The model can be found [here](kwang123/MaskedLM-roberta-large).
 
