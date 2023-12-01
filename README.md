@@ -18,7 +18,7 @@ The model can be found [here](https://drive.google.com/file/d/107vHAbHNqG05WlDmN
 
 [Code for fine-tuning](https://github.com/KaishuoWang/Depression-Detection/blob/main/depression-detection-classification.ipynb)
 
-Weighted F1 score: 0.7686, Macro F1 score: 0.7278
+Weighted F1 score: 0.7686, Macro F1 score: 0.7278, Accuracy: 0.7679
 
 ## Prompt-based classification approach
 
@@ -26,14 +26,40 @@ The model can be found [here](kwang123/MaskedLM-roberta-large).
 
 [Code for fine-tuning](https://github.com/KaishuoWang/Depression-Detection/blob/main/masked_language_modeling.ipynb)
 
-Weighted F1 score: 0.6160, Macro F1 score: 0.3786
+Weighted F1 score: 0.6160, Macro F1 score: 0.3786, Accuracy: 0.6743
+
+## Zero-shot classification approach
+
+The model can be found [here](https://huggingface.co/kwang123/roberta-base-nli).
+
+Weighted F1 score: 0.7410, Macro F1 score: 0.7410， Accuracy: 0.7411
 
 ## Voting System
+
+[Code for voting system](https://github.com/KaishuoWang/Depression-Detection/blob/main/voting_system.ipynb)
+
+### Claaification + MaskedLM
 
 Weight for MaskedLM model: $0.3786 \div (0.7278 + 0.3786)$
 
 Weight for Classification model: $0.7278 \div (0.7278 + 0.3786)$
 
-[Code for voting system](https://github.com/KaishuoWang/Depression-Detection/blob/main/voting_system.ipynb)
+Weighted F1 score: 0.8488, Macro F1 score: 0.8044, Accuracy: 0.8453
 
-Weighted F1 score: 0.8488, Macro F1 score: 0.8044
+### Claaification + Zero-shot Classification
+
+Weight for zero-shot classification model $0.7410 \div (0.7278 + 0.7410)$
+
+Weight for classification model $0.7278 \div (0.7278 + 0.7410)$
+
+Weighted F1 score: 0.8358, Macro F1 score: 0.7909, Accuracy: 0.8351
+
+### Claaification + MaskedLM + Zero-shot Classification
+
+Weight for zero-shot classification $0.7410 \div (0.7278 + 0.7410 + 0.3786)$
+
+Weight for classification $0.7278 \div (0.7278 + 0.7410 + 0.3786)$
+
+Weight for MaskedLM $0.3786 \div (0.7278 + 0.3786 + 0.7410)$
+
+Weighted F1 score: 0.8358, Macro F1 score: 0.7909, Accuracy: 0.8351
