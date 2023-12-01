@@ -38,7 +38,7 @@ Weighted F1 score: 0.7410, Macro F1 score: 0.7410， Accuracy: 0.7411
 
 [Code for voting system](https://github.com/KaishuoWang/Depression-Detection/blob/main/voting_system.ipynb)
 
-### Claaification + MaskedLM
+### Classification + MaskedLM
 
 Weight for MaskedLM model: $0.3786 \div (0.7278 + 0.3786)$
 
@@ -46,7 +46,7 @@ Weight for Classification model: $0.7278 \div (0.7278 + 0.3786)$
 
 Weighted F1 score: 0.8488, Macro F1 score: 0.8044, Accuracy: 0.8453
 
-### Claaification + Zero-shot Classification
+### Classification + Zero-shot Classification
 
 Weight for zero-shot classification model $0.7410 \div (0.7278 + 0.7410)$
 
@@ -54,7 +54,7 @@ Weight for classification model $0.7278 \div (0.7278 + 0.7410)$
 
 Weighted F1 score: 0.8358, Macro F1 score: 0.7909, Accuracy: 0.8351
 
-### Claaification + MaskedLM + Zero-shot Classification
+### Classification + MaskedLM + Zero-shot Classification
 
 Weight for zero-shot classification $0.7410 \div (0.7278 + 0.7410 + 0.3786)$
 
