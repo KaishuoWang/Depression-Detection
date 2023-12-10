@@ -1,6 +1,6 @@
 # Depression Detection
 
-This repository contains the code for [Detecting Signs of Depression from Social Media Text-LT-EDI@ACL 2022](https://competitions.codalab.org/competitions/36410)
+This repository is for [Detecting Signs of Depression from Social Media Text-LT-EDI@ACL 2022](https://competitions.codalab.org/competitions/36410)
 
 ## Generating emotion features using BERT model
 
@@ -24,7 +24,7 @@ Weighted F1 score: 0.7686, Macro F1 score: 0.7278, Accuracy: 0.7679
 
 The model can be found [here](kwang123/MaskedLM-roberta-large).
 
-[Code for fine-tuning](https://github.com/KaishuoWang/Depression-Detection/blob/main/masked_language_modeling.ipynb)
+[Code for fine-tuning](https://github.com/KaishuoWang/Depression-Detection/blob/main/masked-language-modeling.ipynb)
 
 Weighted F1 score: 0.6160, Macro F1 score: 0.3786, Accuracy: 0.6743
 
